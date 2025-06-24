@@ -34,7 +34,7 @@ public class SignupHandler extends HttpServlet {
 		String finalAccountNumber = accountNumber1 + "" + accountNumber2;
 
 		// generates card number for new user
-        String cardNumber1 = String.valueOf(random.nextInt(90000000) + 10000000);
+                String cardNumber1 = String.valueOf(random.nextInt(90000000) + 10000000);
 		String cardNumber2 = String.valueOf(random.nextInt(90000000) + 10000000);
 		String finalCardNumber = cardNumber1 + cardNumber2;
          
