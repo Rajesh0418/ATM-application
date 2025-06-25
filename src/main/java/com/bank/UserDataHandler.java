@@ -22,7 +22,7 @@ public class UserDataHandler {
         String query = "select * from userdata where accountholdername=? and phonenumber=? and password=?";
         try {
             PreparedStatement st = (loginDao.getConnection()).prepareStatement(query);
-            st.setString(1, accountHolderName.toUpperCase().trim();
+            st.setString(1, accountHolderName.toUpperCase().trim());
             st.setString(2, phoneNumber);
             st.setString(3, pin);
             ResultSet rs = st.executeQuery();
